@@ -6,19 +6,19 @@ const Login = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center p-4 bg-[#FFE6C9]">
-            <div className="flex max-w-7xl w-full bg-white rounded-2xl overflow-hidden shadow-[0_0_45px_#E1C2A8]">
+            <div className="flex flex-col lg:flex-row max-w-7xl w-full bg-white rounded-2xl overflow-hidden shadow-[0_0_45px_#E1C2A8]">
                 
 
                 {/* image */}
-                <div className="hidden lg:flex lg:w-1/2 bg-white p-8 relative items-center justify-center">
-                    <img src={LoginImage} alt="" className="relative z-10 w-full h-auto max-w-sm object-center"/>
+                <div className="w-full h-56 sm:h-72 lg:h-auto lg:w-3/5 relative lg:p-2 bg-white">
+                    <img src={LoginImage} alt="" className="w-full h-full object-cover"/>
                 </div>
 
                 {/* login form */}
                 <div className="flex-1 p-8 shadow-xl sm:p-12 lg:p-16 flex flex-col justify-center">
-                    <img src={Icon} alt="" className="w-12"/>
-                    <h2 className="text-[#525252] text-3xl font-bold mt-6">Login to your Account</h2>
-                    <span className="text-[#525252] mb-6">See what is going on with your business</span>
+                    <img src={Icon} alt="" className="w-12 pt-16"/>
+                    <h2 className="text-[#525252] text-2xl sm:text-3xl font-bold mt-6">Login to your Account</h2>
+                    <span className="text-[#525252] text-sm sm:text-base mb-6 block">See what is going on with your business</span>
 
                     {/* google buttom */}
                     <div className="relative">
@@ -30,12 +30,12 @@ const Login = () => {
 
                     {/* or Divider */}
                     <div className="flex justify-center my-6">
-                        <span className="shrink mx-4 text-[#A1A1A1] text-sm">------------- or Sign in with Email ------------- </span>
+                        <span className="mx-4 text-[#A1A1A1] text-sm whitespace-nowrap">------------- or Sign in with Email -------------</span>
                     </div>
                     
                     <form className="space-y-5">
                         {/* email */}
-                        <div className="relative pt-4">
+                        <div className="relative">
                             <label htmlFor="email" className="text-sm font-medium text-[#828282] bg-white z-10">Email</label>
                             <div className="relative">
                                 <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></span>
@@ -44,7 +44,7 @@ const Login = () => {
                         </div>
 
                         {/* password */}
-                        <div className="relative pt-4">
+                        <div className="relative">
                             <label htmlFor="password" className="text-sm font-medium text-[#828282] bg-white z-10">Password</label>
                             <div className="relative">
                                 <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></span>
@@ -81,7 +81,7 @@ const Login = () => {
                     </form>
 
                     {/* signup link */}
-                    <div className="text-center text-sm text-[#828282]">
+                    <div className="text-center text-sm text-[#828282] pt-16">
                         Not Registered Yet?{" "}
                         <a href="#"
                         className="text-[#7F265B] font-semibold hover:underline">
