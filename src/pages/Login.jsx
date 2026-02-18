@@ -1,6 +1,10 @@
 import { FcGoogle } from "react-icons/fc";
 import LoginImage from '../assets/illustration.png';
 import Icon from '../assets/icon.png';
+import InputField from '../components/InputField';
+import PrimaryButton from "../components/PrimaryButton";
+import Divider from "../components/Divider";
+import SocialButton from "../components/SocialButton";
 
 const Login = () => {
 
@@ -21,36 +25,19 @@ const Login = () => {
                     <span className="text-[#525252] text-sm sm:text-base mb-6 block">See what is going on with your business</span>
 
                     {/* google buttom */}
-                    <div className="relative">
-                        <button className="w-full flex items-center justify-center gap-3 text-[#828282] border-2 border-gray-200 rounded-sm py-3 font-semibold">
-                            <FcGoogle className="w-5 h-5" />
-                            Continue with Google
-                        </button>
-                    </div>
+                    <SocialButton icon={FcGoogle}>
+                        Continue with Google
+                    </SocialButton>
 
-                    {/* or Divider */}
-                    <div className="flex justify-center my-6">
-                        <span className="mx-4 text-[#A1A1A1] text-sm whitespace-nowrap">------------- or Sign in with Email -------------</span>
-                    </div>
+                    {/* divider */}
+                    <Divider text="or Sign in with Email" />
                     
                     <form className="space-y-5">
                         {/* email */}
-                        <div className="relative">
-                            <label htmlFor="email" className="text-sm font-medium text-[#828282] bg-white z-10">Email</label>
-                            <div className="relative">
-                                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></span>
-                                <input type="text" id="email"  className="w-full border border-[#DED2D9] text-[#E0E0E0] rounded-sm pl-3 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="mail@abc.com" autoComplete="off"/>
-                            </div>
-                        </div>
-
+                        <InputField label="Email" type="text" id="email" placeholder="mail@abc.com"/>
+         
                         {/* password */}
-                        <div className="relative">
-                            <label htmlFor="password" className="text-sm font-medium text-[#828282] bg-white z-10">Password</label>
-                            <div className="relative">
-                                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></span>
-                                <input type="text" id="email"  className="w-full border border-[#DED2D9] text-[#E0E0E0] rounded-sm pl-3 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="*****************" autoComplete="off"/>
-                            </div>
-                        </div>
+                        <InputField label="Password" type="password" id="password" placeholder="*****************"/>
 
                         
                         {/* forgot password link */}
@@ -75,9 +62,7 @@ const Login = () => {
                         
 
                         {/* login buttom */}
-                        <button className="w-full text-white bg-[#7F265B] rounded-sm py-3 font-semibold hover:bg-[#975c7f] transition duration-200">
-                            Login
-                        </button>
+                        <PrimaryButton>Login</PrimaryButton>
                     </form>
 
                     {/* signup link */}
