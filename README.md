@@ -1,16 +1,64 @@
-# React + Vite
+## Tecnologias Utilizadas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- React
+- Vite
+- Tailwind CSS
+- React Icons
+- JavaScript
 
-Currently, two official plugins are available:
+## Estrutura do Projeto
+src/
+│
+├── assets/
+│ ├── icon.png
+│ ├── illustration.png
+│
+├── components/ # Componentes reutilizáveis
+│ ├── Divider.jsx
+│ ├── InputField.jsx
+│ ├── PrimaryButton.jsx
+│ ├── SocialButton.jsx
+│
+├── pages/
+│ └── Login.jsx
+│
+├── App.jsx
+├── index.css
+└── main.jsx
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como rodar o projeto localmente
+### 1 - Clone o repositório
+git clone https://github.com/lettyfranca/login-page-challenge.git
 
-## React Compiler
+### 2 - Acesse a pasta
+cd login-page-challenge ou cd .\login-page-challenge
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 3 - Instale as dependências
+npm install
 
-## Expanding the ESLint configuration
+### 4 - Rode o projeto
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O projeto estará disponível em: http://localhost:5173
+
+## Como foi feito o deploy
+O deploy foi realizado através do Vercel, seguindo os passos abaixo:
+1 - Acesso a https://vercel.com/
+2 - Login com o github
+3 - Seleção do repositório a ser publicado
+4 - O próprio Vercel identifica as tecnologias usadas e prepara tudo para o deployement
+5 - Conferência e confirmação da publicação
+
+## Decisões técnicas tomadas
+- Para preparação do projeto/ambiente o Vite foi escolhido por ser mais rápido e moderno do que o Create React App.
+- Para estilização o Tailwind foi usado por agilizar todo o processo, ter classes para tratar de responsividade de forma simples e para criar um padrão no layout.
+- Foi possível componentizar algumas coisas que podem ser reutilizadas posteriormente, como é o caso dos campos de Email e Password.
+
+## Como a responsividade foi pensada
+- Como mencionado anteriormente a responsividade foi simplificada com o uso do Tailwind, onde foi usada a ideia de 'Mobile-first', trabalhando com as classes 'sm' e 'lg'.
+- Além delas outras classes foram adotadas para o tamanho dos textos (text-sm, text-2xl, text-3xl).
+- E para imagem foi usada a classe 'object-cover' para que a imagem seja adaptada ao tamanho do dispositivo.
+
+## Link do Figma
+https://www.figma.com/design/neKBjsaZIIwDttC4ZzKiDj/Challenge---Login-Page?node-id=0-1&t=8HRD9WjdIfDLKVsB-1
+
