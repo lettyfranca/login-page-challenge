@@ -7,6 +7,7 @@
 - JavaScript
 
 ## Estrutura do Projeto
+```text
 src/
 │
 ├── assets/
@@ -25,6 +26,7 @@ src/
 ├── App.jsx
 ├── index.css
 └── main.jsx
+```
 
 ## Como rodar o projeto localmente
 ### 1 - Clone o repositório
