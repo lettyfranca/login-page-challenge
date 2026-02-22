@@ -44,12 +44,12 @@ npm run dev
 O projeto estará disponível em: http://localhost:5173
 
 ## Como foi feito o deploy
-O deploy foi realizado através do Vercel, seguindo os passos abaixo:
-1 - Acesso a https://vercel.com/
-2 - Login com o github
-3 - Seleção do repositório a ser publicado
-4 - O próprio Vercel identifica as tecnologias usadas e prepara tudo para o deployement
-5 - Conferência e confirmação da publicação
+O deploy foi realizado através do Vercel, seguindo os passos abaixo: <br>
+1 - Acesso a https://vercel.com/ <br>
+2 - Login com o github <br>
+3 - Seleção do repositório a ser publicado <br>
+4 - O próprio Vercel identifica as tecnologias usadas e prepara tudo para o deployement <br>
+5 - Conferência e confirmação da publicação <br>
 
 ## Decisões técnicas tomadas
 - Para preparação do projeto/ambiente o Vite foi escolhido por ser mais rápido e moderno do que o Create React App.
